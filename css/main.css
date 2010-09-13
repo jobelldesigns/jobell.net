@@ -16,10 +16,10 @@ a:hover {
 .header {
 	font-family:"Letter Gothic Std", "Arial Narrow", Arial, Helvetica, Sans-serif;
 	display:block;
-	width:440px;
 	margin:20px;
 	margin-left:auto;
 	margin-right:auto;
+        width: 515px;
 }
 
 h1 {
@@ -32,11 +32,13 @@ h1 {
 }
 
 .divider {
-	display:block;
+        background:transparent url(../images/header_divider.gif) repeat-x scroll;
+        display:block;
 	margin:15px 0 10px 0;
 	height:4px;
-	width:440px;
-	background:transparent url(../images/header_divider.gif) no-repeat scroll;
+        width: 515px;
+        overflow: hidden;
+	
 }
 
 ul.nav_menu {
@@ -44,7 +46,7 @@ ul.nav_menu {
 	display:block;
 	height:30px;
 	padding:0px 15px;
-	width:410px;
+
 }
 
 ul.nav_menu > li {
@@ -54,7 +56,7 @@ ul.nav_menu > li {
 	font-size:20px;
 	font-weight:bold;
 	letter-spacing:2px;
-	margin-left:39px;
+	margin-left:25px;
 	padding:5px;
 }
 
@@ -72,6 +74,7 @@ ul.nav_menu > li > a {
 
 
 .content {
+        clear: both;
 	margin:100px 0 0 30px;
 }
 
@@ -95,6 +98,7 @@ h3 {
 	color:#3ca0e5;
 	text-transform:uppercase;
 	font-size:10px;
+        font-weight:bold;
 	margin:0 0 15px;
 }
 
