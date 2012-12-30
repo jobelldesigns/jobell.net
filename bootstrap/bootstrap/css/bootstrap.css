@@ -291,100 +291,44 @@ a:hover {
   width: 940px;
 }
 
-.span12 {
+.span5 {
   width: 940px;
 }
 
-.span11 {
-  width: 860px;
-}
-
-.span10 {
-  width: 780px;
-}
-
-.span9 {
-  width: 700px;
-}
-
-.span8 {
-  width: 620px;
-}
-
-.span7 {
-  width: 540px;
-}
-
-.span6 {
-  width: 460px;
-}
-
-.span5 {
-  width: 380px;
-}
-
 .span4 {
-  width: 300px;
+  width: 748px;
 }
 
 .span3 {
-  width: 220px;
+  width: 556px;
 }
 
 .span2 {
-  width: 140px;
+  width: 364px;
 }
 
 .span1 {
-  width: 60px;
-}
-
-.offset12 {
-  margin-left: 980px;
-}
-
-.offset11 {
-  margin-left: 900px;
-}
-
-.offset10 {
-  margin-left: 820px;
-}
-
-.offset9 {
-  margin-left: 740px;
-}
-
-.offset8 {
-  margin-left: 660px;
-}
-
-.offset7 {
-  margin-left: 580px;
-}
-
-.offset6 {
-  margin-left: 500px;
+  width: 172px;
 }
 
 .offset5 {
-  margin-left: 420px;
+  margin-left: 980px;
 }
 
 .offset4 {
-  margin-left: 340px;
+  margin-left: 788px;
 }
 
 .offset3 {
-  margin-left: 260px;
+  margin-left: 596px;
 }
 
 .offset2 {
-  margin-left: 180px;
+  margin-left: 404px;
 }
 
 .offset1 {
-  margin-left: 100px;
+  margin-left: 212px;
 }
 
 .row-fluid {
@@ -423,184 +367,79 @@ a:hover {
   margin-left: 2.127659574468085%;
 }
 
-.row-fluid .span12 {
+.row-fluid .span5 {
   width: 100%;
   *width: 99.94680851063829%;
 }
 
-.row-fluid .span11 {
-  width: 91.48936170212765%;
-  *width: 91.43617021276594%;
-}
-
-.row-fluid .span10 {
-  width: 82.97872340425532%;
-  *width: 82.92553191489361%;
-}
-
-.row-fluid .span9 {
-  width: 74.46808510638297%;
-  *width: 74.41489361702126%;
-}
-
-.row-fluid .span8 {
-  width: 65.95744680851064%;
-  *width: 65.90425531914893%;
-}
-
-.row-fluid .span7 {
-  width: 57.44680851063829%;
-  *width: 57.39361702127659%;
-}
-
-.row-fluid .span6 {
-  width: 48.93617021276595%;
-  *width: 48.88297872340425%;
-}
-
-.row-fluid .span5 {
-  width: 40.42553191489362%;
-  *width: 40.37234042553192%;
-}
-
 .row-fluid .span4 {
-  width: 31.914893617021278%;
-  *width: 31.861702127659576%;
+  width: 79.57446808510637%;
+  *width: 79.52127659574467%;
 }
 
 .row-fluid .span3 {
-  width: 23.404255319148934%;
-  *width: 23.351063829787233%;
+  width: 59.148936170212764%;
+  *width: 59.09574468085106%;
 }
 
 .row-fluid .span2 {
-  width: 14.893617021276595%;
-  *width: 14.840425531914894%;
+  width: 38.723404255319146%;
+  *width: 38.670212765957444%;
 }
 
 .row-fluid .span1 {
-  width: 6.382978723404255%;
-  *width: 6.329787234042553%;
+  width: 18.29787234042553%;
+  *width: 18.24468085106383%;
 }
 
-.row-fluid .offset12 {
+.row-fluid .offset5 {
   margin-left: 104.25531914893617%;
   *margin-left: 104.14893617021275%;
 }
 
-.row-fluid .offset12:first-child {
+.row-fluid .offset5:first-child {
   margin-left: 102.12765957446808%;
   *margin-left: 102.02127659574467%;
 }
 
-.row-fluid .offset11 {
-  margin-left: 95.74468085106382%;
-  *margin-left: 95.6382978723404%;
-}
-
-.row-fluid .offset11:first-child {
-  margin-left: 93.61702127659574%;
-  *margin-left: 93.51063829787232%;
-}
-
-.row-fluid .offset10 {
-  margin-left: 87.23404255319149%;
-  *margin-left: 87.12765957446807%;
-}
-
-.row-fluid .offset10:first-child {
-  margin-left: 85.1063829787234%;
-  *margin-left: 84.99999999999999%;
-}
-
-.row-fluid .offset9 {
-  margin-left: 78.72340425531914%;
-  *margin-left: 78.61702127659572%;
-}
-
-.row-fluid .offset9:first-child {
-  margin-left: 76.59574468085106%;
-  *margin-left: 76.48936170212764%;
-}
-
-.row-fluid .offset8 {
-  margin-left: 70.2127659574468%;
-  *margin-left: 70.10638297872339%;
-}
-
-.row-fluid .offset8:first-child {
-  margin-left: 68.08510638297872%;
-  *margin-left: 67.9787234042553%;
-}
-
-.row-fluid .offset7 {
-  margin-left: 61.70212765957446%;
-  *margin-left: 61.59574468085106%;
-}
-
-.row-fluid .offset7:first-child {
-  margin-left: 59.574468085106375%;
-  *margin-left: 59.46808510638297%;
-}
-
-.row-fluid .offset6 {
-  margin-left: 53.191489361702125%;
-  *margin-left: 53.085106382978715%;
-}
-
-.row-fluid .offset6:first-child {
-  margin-left: 51.063829787234035%;
-  *margin-left: 50.95744680851063%;
-}
-
-.row-fluid .offset5 {
-  margin-left: 44.68085106382979%;
-  *margin-left: 44.57446808510638%;
-}
-
-.row-fluid .offset5:first-child {
-  margin-left: 42.5531914893617%;
-  *margin-left: 42.4468085106383%;
-}
-
 .row-fluid .offset4 {
-  margin-left: 36.170212765957444%;
-  *margin-left: 36.06382978723405%;
+  margin-left: 83.82978723404254%;
+  *margin-left: 83.72340425531912%;
 }
 
 .row-fluid .offset4:first-child {
-  margin-left: 34.04255319148936%;
-  *margin-left: 33.93617021276596%;
+  margin-left: 81.70212765957446%;
+  *margin-left: 81.59574468085104%;
 }
 
 .row-fluid .offset3 {
-  margin-left: 27.659574468085104%;
-  *margin-left: 27.5531914893617%;
+  margin-left: 63.40425531914893%;
+  *margin-left: 63.297872340425535%;
 }
 
 .row-fluid .offset3:first-child {
-  margin-left: 25.53191489361702%;
-  *margin-left: 25.425531914893618%;
+  margin-left: 61.27659574468085%;
+  *margin-left: 61.170212765957444%;
 }
 
 .row-fluid .offset2 {
-  margin-left: 19.148936170212764%;
-  *margin-left: 19.04255319148936%;
+  margin-left: 42.97872340425532%;
+  *margin-left: 42.87234042553191%;
 }
 
 .row-fluid .offset2:first-child {
-  margin-left: 17.02127659574468%;
-  *margin-left: 16.914893617021278%;
+  margin-left: 40.85106382978723%;
+  *margin-left: 40.744680851063826%;
 }
 
 .row-fluid .offset1 {
-  margin-left: 10.638297872340425%;
-  *margin-left: 10.53191489361702%;
+  margin-left: 22.5531914893617%;
+  *margin-left: 22.4468085106383%;
 }
 
 .row-fluid .offset1:first-child {
-  margin-left: 8.51063829787234%;
-  *margin-left: 8.404255319148938%;
+  margin-left: 20.425531914893618%;
+  *margin-left: 20.319148936170215%;
 }
 
 [class*="span"].hide,
@@ -1320,76 +1159,34 @@ textarea,
   margin-left: 20px;
 }
 
-input.span12,
-textarea.span12,
-.uneditable-input.span12 {
-  width: 926px;
-}
-
-input.span11,
-textarea.span11,
-.uneditable-input.span11 {
-  width: 846px;
-}
-
-input.span10,
-textarea.span10,
-.uneditable-input.span10 {
-  width: 766px;
-}
-
-input.span9,
-textarea.span9,
-.uneditable-input.span9 {
-  width: 686px;
-}
-
-input.span8,
-textarea.span8,
-.uneditable-input.span8 {
-  width: 606px;
-}
-
-input.span7,
-textarea.span7,
-.uneditable-input.span7 {
-  width: 526px;
-}
-
-input.span6,
-textarea.span6,
-.uneditable-input.span6 {
-  width: 446px;
-}
-
 input.span5,
 textarea.span5,
 .uneditable-input.span5 {
-  width: 366px;
+  width: 926px;
 }
 
 input.span4,
 textarea.span4,
 .uneditable-input.span4 {
-  width: 286px;
+  width: 734px;
 }
 
 input.span3,
 textarea.span3,
 .uneditable-input.span3 {
-  width: 206px;
+  width: 542px;
 }
 
 input.span2,
 textarea.span2,
 .uneditable-input.span2 {
-  width: 126px;
+  width: 350px;
 }
 
 input.span1,
 textarea.span1,
 .uneditable-input.span1 {
-  width: 46px;
+  width: 158px;
 }
 
 .controls-row {
@@ -2130,84 +1927,84 @@ table th[class*="span"],
 .table td.span1,
 .table th.span1 {
   float: none;
-  width: 44px;
+  width: 156px;
   margin-left: 0;
 }
 
 .table td.span2,
 .table th.span2 {
   float: none;
-  width: 124px;
+  width: 348px;
   margin-left: 0;
 }
 
 .table td.span3,
 .table th.span3 {
   float: none;
-  width: 204px;
+  width: 540px;
   margin-left: 0;
 }
 
 .table td.span4,
 .table th.span4 {
   float: none;
-  width: 284px;
+  width: 732px;
   margin-left: 0;
 }
 
 .table td.span5,
 .table th.span5 {
   float: none;
-  width: 364px;
+  width: 924px;
   margin-left: 0;
 }
 
 .table td.span6,
 .table th.span6 {
   float: none;
-  width: 444px;
+  width: 1116px;
   margin-left: 0;
 }
 
 .table td.span7,
 .table th.span7 {
   float: none;
-  width: 524px;
+  width: 1308px;
   margin-left: 0;
 }
 
 .table td.span8,
 .table th.span8 {
   float: none;
-  width: 604px;
+  width: 1500px;
   margin-left: 0;
 }
 
 .table td.span9,
 .table th.span9 {
   float: none;
-  width: 684px;
+  width: 1692px;
   margin-left: 0;
 }
 
 .table td.span10,
 .table th.span10 {
   float: none;
-  width: 764px;
+  width: 1884px;
   margin-left: 0;
 }
 
 .table td.span11,
 .table th.span11 {
   float: none;
-  width: 844px;
+  width: 2076px;
   margin-left: 0;
 }
 
 .table td.span12,
 .table th.span12 {
   float: none;
-  width: 924px;
+  width: 2268px;
   margin-left: 0;
 }
 
