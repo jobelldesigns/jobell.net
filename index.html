@@ -12,59 +12,72 @@
 
         <style>
             section.projects {
-                -moz-column-count: 5;
-                -moz-column-gap: 10px;
-                -webkit-column-count: 5;
-                -webkit-column-gap: 10px;
-                column-count: 5;
-                column-gap: 10px;
-                width: 1200px;
+                -moz-column-count: 3;
+                -moz-column-gap: 6px;
+                -moz-column-fill: auto;
+                -webkit-column-count: 3;
+                -webkit-column-gap: 6px;
+                -webkit-column-fill: auto;
+                column-count: 3;
+                column-fill: auto;
+                column-gap: 6px;
+
+                max-width: 1200px;
+                width: 90%;
+                background-color: #ddd;
+
+                margin: 36px auto;
 
             }
 
             .projects article {
                 display: inline-block; /* Display inline-block, and absolutely NO FLOATS! */
-                margin-bottom: 20px;
+                margin-bottom: 6px;
                 width: 100%;
-                background-color: #eee;
+                text-align: center;
             }
 
+            .projects article img {
+                max-width: 100%;
+            }
+
+
+            @media all and (min-width: 960px) {
+                section.projects {
+                    -moz-column-count: 4;
+                    -webkit-column-count: 4;
+                    column-count: 4;
+                }
+            }
+
+            @media all and (min-width: 1170px) {
+                section.projects {
+                    -moz-column-count: 5;
+                    -webkit-column-count: 5;
+                    column-count: 5;
+                }
+            }
 
         </style>
 
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row-fluid">
-                <div class="span2">
-                  <!--Sidebar content-->
-                </div>
-                <div class="span10">
-                  <!--Body content-->
-                </div>
-            </div>
-        </div>
-
-        <br /><br /><br /><br /><br /><br />
-
         <section class="projects">
-            <article>One</article>
-            <article>Two</article>
-            <article>Three<br/><br/><br/><br/><br/><br/>Three!</article>
-            <article>Four</article>
-            <article>Five</article>
-            <article>Six</article>
-            <article>Seven</article>
-            <article>Eight</article>
-            <article>Nine</article>
-            <article>Ten</article>
-            <article>Eleven</article>
-            <article>Twelve</article>
-            <article>Thirteen</article>
-            <article>Fourteen</article>
-            <article>Fifthteen</article>
-            <article>Sixteen</article>
-
+            <article><img src="http://placehold.it/350x450/E8117F/ffffff"><br/>Hello</article>
+            <article><img src="http://placehold.it/350x450/E8117F/ffffff"><br/>Hello</article>
+            <article><img src="http://placehold.it/350x450/E8117F/ffffff"><br/>Hello</article>
+            <article><img src="http://placehold.it/350x450/E8117F/ffffff"><br/>Hello</article>
+            <article><img src="http://placehold.it/350x450/E8117F/ffffff"><br/>Hello</article>
+            <article><img src="http://placehold.it/350x450/E8117F/ffffff"><br/>Hello</article>
+            <article><img src="http://placehold.it/350x450/E8117F/ffffff"><br/>Hello</article>
+            <article><img src="http://placehold.it/350x450/E8117F/ffffff"><br/>Hello</article>
+            <article><img src="http://placehold.it/350x450/E8117F/ffffff"><br/>Hello</article>
+            <article><img src="http://placehold.it/350x450/E8117F/ffffff"><br/>Hello</article>
+            <article><img src="http://placehold.it/350x450/E8117F/ffffff"><br/>Hello</article>
+            <article><img src="http://placehold.it/350x450/E8117F/ffffff"><br/>Hello</article>
+            <article><img src="http://placehold.it/350x450/E8117F/ffffff"><br/>Hello</article>
+            <article><img src="http://placehold.it/350x450/E8117F/ffffff"><br/>Hello</article>
+            <article><img src="http://placehold.it/350x450/E8117F/ffffff"><br/>Hello</article>
         </section>
 
         <script src="http://code.jquery.com/jquery-latest.js"></script>
