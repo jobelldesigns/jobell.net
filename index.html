@@ -12,6 +12,8 @@
         <script type="text/javascript" src="js/modernizr.custom.27793.js"></script>
 
         <style>
+
+            /* Basic style for tablets and small desktops */
             section.projects {
                 -moz-column-count: 3;
                 -moz-column-gap: 6px;
@@ -22,16 +24,12 @@
                 column-count: 3;
                 column-fill: auto;
                 column-gap: 6px;
-
-                max-width: 1200px;
                 width: 90%;
-
+                max-width: 1200px;
                 margin: 36px auto;
-
             }
 
             .projects article {
-                background-color: #E9E9E9;
                 display: inline-block; /* Display inline-block, and absolutely NO FLOATS! */
                 margin-bottom: 6px;
                 width: 100%;
@@ -39,15 +37,30 @@
             }
 
             .projects article img {
+                background: url('images/stripe.png');
                 max-width: 100%;
                 width: 100%;
+            }
+
+            .projects article p {
+                background: #E9E9E9;
+                line-height: 16px;
+                padding: 6px 10px 4px 10px;
+                margin: 0;
+                min-height: 40px;
+            }
+
+            .projects article p span {
+                vertical-align: middle;
             }
 
             .title {
                 font-weight: bold;
             }
 
+            /**** Responsive ****/
 
+            /* Desktops & Landscape tablets */
             @media all and (min-width: 960px) {
                 section.projects {
                     -moz-column-count: 4;
@@ -56,6 +69,7 @@
                 }
             }
 
+            /* Large desktops */
             @media all and (min-width: 1170px) {
                 section.projects {
                     -moz-column-count: 5;
@@ -69,76 +83,106 @@
     </head>
     <body>
         <section class="projects">
-            <article>
-                <img src="http://placehold.it/400x400/E8117F/ffffff">
-                <p>About • PDF • Contact Details</p>
+            <article class="header">
+                <img src="images/home/jo_bell.png">
+                <p>
+                    About • PDF • Contact Details
+                </p>
             </article>
             <article>
-                <img src="http://placehold.it/350x450/E8117F/ffffff">
-                <p class="title">Frieze Art Fair</p>
-                <p>Limocello Gallery</p>
+                <img src="http://placehold.it/400x400/F6F6F8/BB882F">
+                <p>
+                    <span class="title">Frieze Art Fair</span>
+                    <br />Limocello Gallery
+                </p>
             </article>
             <article>
-                <img src="http://placehold.it/250x200/E8117F/ffffff">
-                <p class="title">The World's Fair</p>
-                <p>HarperCollins Publishers</p>
+                <img src="http://placehold.it/300x400/63c4b0/f0938c">
+                <p>
+                    <span class="title">The World's Fair</span>
+                    <br />Harper<em>Collins</em> Publishers
+                </p>
             </article>
             <article>
-                <img src="http://placehold.it/350x450/E8117F/ffffff">
-                <p class="title">Agents Magazine</p>
-                <p>HarperCollins Publishers</p>
+                <img src="http://placehold.it/350x600/f6e900/282828">
+                <p>
+                    <span class="title">Agents Magazine</span>
+                    <br />Harper<em>Collins</em> Publishers
+                </p>
             </article>
             <article>
-                <img src="http://placehold.it/700x450/E8117F/ffffff">
-                <p class="title">43 Principles of Home</p>
-                <p>Kevin McCloud</p>
+                <img src="http://placehold.it/350x250/DB2A0B/ffffff">
+                <p>
+                    <span class="title">43 Principles of Home</span>
+                    <br />Kevin McCloud
+                </p>
             </article>
             <article>
-                <img src="http://placehold.it/350x450/E8117F/ffffff">
-                <p class="title">Yoga</p>
-                <p>B.K.S. Iyengar</p>
+                <img src="http://placehold.it/350x250/ededed/faa018">
+                <p>
+                    <span class="title">Yoga</span>
+                    <br />B.K.S. Iyengar
+                </p>
             </article>
             <article>
-                <img src="http://placehold.it/200x200/E8117F/ffffff">
-                <p class="title">Event</p>
-                <p>One Housing Group</p>
+                <img src="http://placehold.it/350x350/f7f7ef/005a80">
+                <p>
+                    <span class="title">Event</span>
+                    <br />One Housing Group
+                </p>
             </article>
             <article>
-                <img src="http://placehold.it/350x450/E8117F/ffffff">
-                <p class="title">London Gallery Trumps</p>
+                <img src="http://placehold.it/350x350/e40021/d2d3d2">
+                <p>
+                    <span class="title">London Gallery Trumps</span>
+                </p>
             </article>
             <article>
-                <img src="http://placehold.it/500x450/E8117F/ffffff">
-                <p class="title">Author Direct</p>
-                <p>HarperCollins Publishers</p>
+                <img src="http://placehold.it/350x500/35383a/ffffff">
+                <p>
+                    <span class="title">Author Direct</span>
+                    <br />Harper<em>Collins</em> Publishers
+                </p>
             </article>
             <article>
-                <img src="http://placehold.it/350x450/E8117F/ffffff">
-                <p class="title">Typechairs</p>
+                <img src="http://placehold.it/350x450/65909A/ffffff">
+                <p>
+                    <span class="title">Typechairs</span>
+                </p>
             </article>
             <article>
-                <img src="http://placehold.it/350x450/E8117F/ffffff">
-                <p class="title">Wonders of Life</p>
-                <p>Brian Cox</p>
+                <img src="http://placehold.it/350x450/42652b/cd5f0c">
+                <p>
+                    <span class="title">Wonders of Life</span>
+                    <br />Brian Cox
+                </p>
             </article>
             <article>
-                <img src="http://placehold.it/350x100/E8117F/ffffff">
-                <p class="title">Bookshelf Illustration</p>
-                <p>HarperCollins Publishers</p>
+                <img src="http://placehold.it/350x400/d9d1c6/a03c44">
+                <p>
+                    <span class="title">Bookshelf Illustration</span>
+                    <br />Harper<em>Collins</em> Publishers
+                </p>
             </article>
             <article>
-                <img src="http://placehold.it/300x450/E8117F/ffffff">
-                <p class="title">Collins Shorts</p>
-                <p>HarperCollins Publishers</p>
+                <img src="http://placehold.it/300x450/01c6d9/ffffff">
+                <p>
+                    <span class="title">Collins Shorts</span>
+                    <br />Harper<em>Collins</em> Publishers
+                </p>
             </article>
             <article>
-                <img src="http://placehold.it/500x450/E8117F/ffffff">
-                <p class="title">Our Last Days of Letterpress</p>
+                <img src="http://placehold.it/500x450/ff0000/370000">
+                <p>
+                    <span class="title">Our Last Days of Letterpress</span>
+                </p>
             </article>
             <article>
-                <img src="http://placehold.it/500x450/E8117F/ffffff">
-                <p class="title">Illustration</p>
-                <p>Various</p>
+                <img src="http://placehold.it/500x450/f9f9f9/292929">
+                <p>
+                    <span class="title">Illustration</span>
+                    <br />Various
+                </p>
             </article>
         </section>
 
