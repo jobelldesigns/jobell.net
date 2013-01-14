@@ -25,6 +25,13 @@
             </div>
         </div>
         <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <script src="bootstrap/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../../bootstrap/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#total-pages').text($('.gallery img').length);
+                $('.gallery img:first-child').show();
+            });
+
+        </script>
     </body>
 </html>
