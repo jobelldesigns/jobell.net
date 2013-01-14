@@ -1,0 +1,138 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 100%;
+
+    font-family: helvetica, arial, sans;
+}
+
+p {
+    line-height: 1.2em;
+    margin-bottom: 0;
+}
+
+.main-container {
+    margin: 0;
+    padding: 2.8571428571%; /* (20/700) * 100 */
+    height: 90%; /* 94.2857  */
+}
+
+.inside {
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    margin: 0 auto;
+}
+
+.description-col, .gallery {
+    margin-top: 1em;
+}
+
+.description-col {
+    width: 19.5%; /* (187.2 / 960) * 100 */
+    float: left;
+    margin-right: 0.625%;
+    min-height: 500px;
+    text-align: center;
+}
+
+.gallery {
+    width: 79.875%;
+    background: url('images/stripe.png');
+    float: left;
+    min-height: 630px;
+    position:relative;
+}
+
+.gallery img {
+    margin: auto;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.group:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+h1, .client, .type {
+    font-size: 1em;
+    line-height: 1.2em;
+    margin: 0;
+    width: 100%;
+
+}
+
+.client {
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.3em;
+}
+
+.type {
+    line-height: 2.3em;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1px;
+    margin-bottom: 1em;
+}
+
+.main-description {
+    text-align: left;
+}
+
+.links {
+    color: #b1b1b1;
+    display: inline-block;
+    margin: 2em auto 0;
+}
+
+.links a {
+    color: #b1b1b1;
+    text-decoration: none;
+    display: inline-block
+}
+
+.links span {
+    font-weight: bold;
+}
+
+h1 {
+    margin-top: 0.6em;
+}
+
+.page-nav, .home {
+    float: left;
+    border-bottom: 1px solid #b1b1b1;
+    padding-bottom: 5px;
+}
+
+.page-nav {
+    margin-left: 2em;
+}
+
+.nav-btn {
+    height: 11px;
+    width: 6px;
+}
+
+.previous-page {
+    background: url("images/arrows.png") no-repeat scroll 0 0;
+}
+
+.next-page {
+    background: url("images/arrows.png") no-repeat scroll -7px 0;
+}
