@@ -37,8 +37,11 @@
                     namespace: '',
                     controlNav: false,
                     directionNav: false,
-                    pauseOnHover: true
-
+                    pauseOnHover: true,
+                    after: function(){
+                        var flexslider = $('.gallery').data('flexslider');
+                        $('#current-page').text(flexslider.currentSlide + 1);
+                    }
                 });
 
                 $('.page-nav .next').on('click', function() {
@@ -48,7 +51,6 @@
                 $('.page-nav .prev').on('click', function() {
                     $('.gallery').flexslider("prev");
                 })
-
 
             });
 
