@@ -21,6 +21,12 @@ section.projects {
     text-align: center;
 }
 
+.projects article a {
+    color: #333;
+    display: block;
+    text-decoration: none;
+}
+
 .projects article img {
     background: url('../images/stripe.png');
     max-width: 100%;
@@ -61,6 +67,10 @@ article.header img {
     width: 100%;
     background-size: 120%;
     background-position: 100% 0%;
+}
+
+.projects article a:hover p {
+    background: #CCC;
 }
 
 
