@@ -45,7 +45,7 @@ p {
 
 .gallery {
     width: 79.875%;
-    background: url('images/stripe.png');
+    background: url('../images/stripe.png');
     float: left;
     min-height: 630px;
     position:relative;
@@ -130,9 +130,9 @@ h1 {
 }
 
 .previous-page {
-    background: url("images/arrows.png") no-repeat scroll 0 0;
+    background: url("../images/arrows.png") no-repeat scroll 0 0;
 }
 
 .next-page {
-    background: url("images/arrows.png") no-repeat scroll -7px 0;
+    background: url("../images/arrows.png") no-repeat scroll -7px 0;
 }
