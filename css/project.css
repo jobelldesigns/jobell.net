@@ -60,6 +60,7 @@ p {
     right: 0;
     max-height: 100%;
     max-width: 100%;
+    display: none;
 }
 
 .group:after {
