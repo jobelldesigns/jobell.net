@@ -1,0 +1,102 @@
+/* Basic style for tablets and small desktops */
+section.projects {
+    -moz-column-count: 3;
+    -moz-column-gap: 6px;
+    -moz-column-fill: auto;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 6px;
+    -webkit-column-fill: auto;
+    column-count: 3;
+    column-fill: auto;
+    column-gap: 6px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 36px auto;
+}
+
+.projects article {
+    display: inline-block; /* Display inline-block, and absolutely NO FLOATS! */
+    margin-bottom: 6px;
+    width: 100%;
+    text-align: center;
+}
+
+.projects article img {
+    background: url('images/stripe.png');
+    max-width: 100%;
+    width: 100%;
+}
+
+.projects article p {
+    background: #E9E9E9;
+    line-height: 16px;
+    padding: 6px 10px 4px 10px;
+    margin: 0;
+    min-height: 40px;
+}
+
+.projects article p span {
+    vertical-align: middle;
+}
+
+.title {
+    font-weight: bold;
+}
+
+article.header img {
+    padding-bottom: 7px;
+}
+
+.author-direct .img {
+    background: url("images/home/author_direct_hp.jpg");
+    height: 350px;
+    width: 100%;
+    background-size: 250%;
+    background-position: 20% 15%;
+}
+
+.collins-shorts .img {
+    background: url("images/home/collins_shorts_hp.jpg");
+    height: 390px;
+    width: 100%;
+    background-size: 120%;
+    background-position: 100% 0%;
+}
+
+
+/**** Responsive ****/
+
+/* Desktops & Landscape tablets */
+@media all and (min-width: 960px) {
+    section.projects {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+/* Large desktops */
+@media all and (min-width: 1170px) {
+    section.projects {
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        column-count: 5;
+    }
+}
+
+/* Mobiles */
+@media all and (max-width: 400px) {
+    section.projects {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media all and (min-width: 400px) and (max-width: 767px) {
+    section.projects {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
