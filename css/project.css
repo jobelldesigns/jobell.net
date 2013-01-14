@@ -81,10 +81,10 @@ h1, .client, .type {
     line-height: 2.3em;
     border-bottom: 1px solid #333;
     padding-bottom: 1px;
-    margin-bottom: 1em;
 }
 
 .main-description {
+    margin-top: 1em;
     text-align: left;
 }
 
