@@ -22,7 +22,7 @@ section.projects {
 }
 
 .projects article img {
-    background: url('images/stripe.png');
+    background: url('../images/stripe.png');
     max-width: 100%;
     width: 100%;
 }
@@ -48,7 +48,7 @@ article.header img {
 }
 
 .author-direct .img {
-    background: url("images/home/author_direct_hp.jpg");
+    background: url("../images/home/author_direct_hp.jpg");
     height: 350px;
     width: 100%;
     background-size: 250%;
@@ -56,7 +56,7 @@ article.header img {
 }
 
 .collins-shorts .img {
-    background: url("images/home/collins_shorts_hp.jpg");
+    background: url("../images/home/collins_shorts_hp.jpg");
     height: 390px;
     width: 100%;
     background-size: 120%;
