@@ -33,9 +33,22 @@
                 $('#total-pages').text($('.gallery img').length);
                 $('.gallery img:first-child').show();
 
-                $('.flexslider').flexslider({
+                $('.gallery').flexslider({
+                    namespace: '',
+                    controlNav: false,
+                    directionNav: false,
                     pauseOnHover: true
+
                 });
+
+                $('.page-nav .next').on('click', function() {
+                    $('.gallery').flexslider("next");
+                })
+
+                $('.page-nav .prev').on('click', function() {
+                    $('.gallery').flexslider("prev");
+                })
+
 
             });
 
