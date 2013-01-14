@@ -9,12 +9,13 @@
         <link href="../../bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
         <link href="../../bootstrap/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
+        <link href="../../css/flexslider.css" rel="stylesheet">
+
         <!-- Project CSS -->
         <link href="../../css/project.css" rel="stylesheet">
 
         <!-- Modernize this -->
         <script type="text/javascript" src="../../js/modernizr.custom.27793.js"></script>
-
     </head>
     <body>
         <div class="main-container">
@@ -26,16 +27,14 @@
         </div>
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="../../bootstrap/bootstrap/js/bootstrap.min.js"></script>
-        <script src="../../js/slides.min.jquery.js"></script>
+        <script src="../../js/jquery.flexslider.js"></script>
         <script type="text/javascript">
             $(function() {
                 $('#total-pages').text($('.gallery img').length);
                 $('.gallery img:first-child').show();
 
-                $("#slides").slides({
-                    generatePagination: false,
-                    bigTarget: true,
-                    generateNextPrev: true
+                $('.flexslider').flexslider({
+                    pauseOnHover: true
                 });
 
             });

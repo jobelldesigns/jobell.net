@@ -2,9 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     font-size: 100%;
-
     font-family: helvetica, arial, sans;
 }
 
@@ -53,15 +51,9 @@ p {
 }
 
 .gallery img {
-    margin: auto;
-    position: absolute;
-    top:0;
-    bottom:0;
-    left: 0;
-    right: 0;
     max-height: 91.392801252%; /* 33px / 766.8px */
     max-width: 91.392801252%; /* 33px / 766.8px */
-    display: none;
+
 }
 
 .group:after {
@@ -137,15 +129,4 @@ h1 {
 
 .next-page {
     background: url("../images/arrows.png") no-repeat scroll -7px 0;
-}
-
-
-.slides_container {
-    width:100%;
-    height:100%;
-}
-.slides_container div {
-    width:800px;
-    height:500px;
-    display:block;
 }
