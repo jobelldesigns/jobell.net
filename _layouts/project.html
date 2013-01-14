@@ -44,11 +44,13 @@
                     }
                 });
 
-                $('.page-nav .next').on('click', function() {
+                $('.page-nav .next').on('click', function(e) {
+                    e.preventDefault();
                     $('.gallery').flexslider("next");
                 })
 
-                $('.page-nav .prev').on('click', function() {
+                $('.page-nav .prev').on('click', function(e) {
+                    e.preventDefault();
                     $('.gallery').flexslider("prev");
                 })
 
