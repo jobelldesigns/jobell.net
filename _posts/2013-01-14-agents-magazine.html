@@ -1,15 +1,19 @@
 ---
 layout: project
 title: Agents' Magazine
+client: HarperCollins Publishers
+type: Layout &amp; Typeface Design
 ---
 
 <div class="description-col">
-    <h1>Agents' Magazine</h1>
-    <p class="client">HarperCollins Publishers</p>
-    <p class="type">Layout &amp; Typeface Design</p>
+    <h1>{{ page.title }}</h1>
+    <p class="client">{{ page.client }}</p>
+    <p class="type">{{ page.type }}</p>
+
     <p class="main-description">A new promotional magazine for HarperFiction, a division of HarperCollins. The magazine, aimed at publishing agents, profiles the best of the fiction list and the great people behind their journey from manuscript to bookshelf.
         <br/><br/>Photography by Maria Spann.
         <br/>Typeface: a re-drawn version of NC Circle.</p>
+
     {% include gallery-nav.html %}
 </div>
 <div class="gallery flexslider group">
