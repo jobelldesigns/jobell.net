@@ -121,12 +121,14 @@ h1 {
 .nav-btn {
     height: 11px;
     width: 6px;
+    text-indent: -9999px;
+    outline: none;
 }
 
-.previous-page {
+.page-nav .prev {
     background: url("../images/arrows.png") no-repeat scroll 0 0;
 }
 
-.next-page {
+.page-nav .next {
     background: url("../images/arrows.png") no-repeat scroll -7px 0;
 }
