@@ -27,10 +27,12 @@ p {
 
 .content {
     margin: 0 auto;
+    height: 100%;
 }
 
 .description-col, .gallery {
     margin-top: 1em;
+    height: 95%;
 }
 
 .description-col {
@@ -47,10 +49,13 @@ p {
     float: left;
     min-height: 630px;
     position:relative;
+    overflow: hidden;
 }
 
-.gallery ul {
-
+.gallery ul.slides {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 .gallery li {
@@ -63,7 +68,7 @@ p {
 
 }
 
-.group:after, .gallery li:after {
+.group:after, .slides:after, .gallery li:after {
     visibility: hidden;
     display: block;
     content: "";
