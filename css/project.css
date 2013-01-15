@@ -53,6 +53,7 @@ p {
 .gallery img {
     max-height: 91.392801252%; /* 33px / 766.8px */
     max-width: 91.392801252%; /* 33px / 766.8px */
+    margin: 0 auto;
 
 }
 
