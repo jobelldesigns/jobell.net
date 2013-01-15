@@ -20,7 +20,7 @@ p {
 .inside {
     border-top: 3px solid #333;
     border-bottom: 3px solid #333;
-    margin: 0 auto;
+    margin: -3px 0;
     width: 100%;
     height: 100%;
 }
