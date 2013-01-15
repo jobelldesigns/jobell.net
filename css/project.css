@@ -100,7 +100,7 @@ h1, .client, .type {
     display: inline-block
 }
 
-.links span {
+.links .home {
     font-weight: bold;
 }
 
