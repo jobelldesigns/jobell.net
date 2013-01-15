@@ -50,6 +50,11 @@
 
                 $('.gallery').flexslider("pause");
 
+                $('#pause').on('click', function(e) {
+                    e.preventDefault();
+                    $('.gallery').flexslider("pause");
+                })
+
                 $('.page-nav .next').on('click', function(e) {
                     e.preventDefault();
                     $('.gallery').flexslider("next");
