@@ -67,24 +67,28 @@ p {
     max-width: 93%;
     margin: 0;
     display: inline-block;
+    vertical-align: middle;
 }
 
-.slides li div.img1 {
+/* Style non semantic wrapper element */
+.slides li div {
+    text-align: center;
     position: relative;
     height: 100%;
-    display: table;
     margin: 0;
     padding: 0;
     width:100%;
 }
 
-.img2 {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    width: 100%;
-    height: 93%;
+/* Add horrendous pseudo element to allow vertical alignment */
+.slides li div:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
 }
+
 
 
 .group:after, .slides:after, .gallery li:after {
