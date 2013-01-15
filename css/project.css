@@ -174,6 +174,26 @@ h1 {
     background: url("../images/arrows.png") no-repeat scroll -7px 0;
 }
 
+
+/* Mobiles */
+@media all and (max-width: 400px) {
+
+}
+
+/* Tablets */
+@media all and (min-width: 400px) and (max-width: 767px) {
+    .description-col {
+        width: 39.530638853%; /* (303.2px / 767px) * 100 */
+        margin-right: 0.7822685789%; /* (6px / 767px) * 100 */
+    }
+
+    .gallery {
+        width: 59.687092568%; /* 457.8px / 767px  - padding * 2 */
+    }
+}
+
+
+
 /* Per Project Styling */
 
 ol.typechairs {
