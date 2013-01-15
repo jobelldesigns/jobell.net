@@ -86,6 +86,7 @@ p {
 }
 
 /* Add horrendous pseudo element to allow vertical alignment */
+/* Thanks http://css-tricks.com/centering-in-the-unknown/ ! */
 .slides li div:before {
   content: '';
   display: inline-block;
