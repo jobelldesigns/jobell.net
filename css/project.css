@@ -59,13 +59,13 @@ p {
 }
 
 .gallery li {
-
+    max-height: 100%;
 }
 
 .gallery img {
-
+    max-height: 93%;
+    max-width: 93%;
     margin: 0 auto;
-
 }
 
 .group:after, .slides:after, .gallery li:after {
