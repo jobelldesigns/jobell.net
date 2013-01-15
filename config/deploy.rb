@@ -1,13 +1,14 @@
 set :application, "Jo Bell"
-set :repository,  "git@github.com:mattheath/jobell.net.git"
-set :scm, :git
 default_run_options[:pty] = true
 set :deploy_to, "/var/www/vhosts/jobell.net"
 
-# use our keys, make sure we grab submodules, try to keep a remote cache
+set :repository,        '_site'
+set :scm,               :none
+set :deploy_via,        :copy
+set :copy_compression,  :gzip
+
+# use our keys
 ssh_options[:forward_agent] = true
-set :git_enable_submodules, 1
-set :deploy_via, :remote_cache
 set :use_sudo, false
 
 # Clean up old releases
@@ -17,11 +18,18 @@ after "deploy:update", "deploy:cleanup"
 # Define server
 role :web, "deploy@mattheath.com"
 
+before 'deploy:update', 'deploy:update_jekyll'
+
 namespace :deploy do
-  desc "Restart web server (reload apache)"
-  task :restart do
-    # Reload apache config
-    run "sudo /etc/init.d/httpd reload"
+
+  [:start, :stop, :restart, :finalize_update].each do |t|
+    desc "#{t} task is a no-op with jekyll"
+    task t, :roles => :app do ; end
+  end
+
+  desc 'Run jekyll to update site before uploading'
+  task :update_jekyll do
+    %x(rm -rf _site/* && jekyll)
   end
 
   desc "Setup folder structure"
