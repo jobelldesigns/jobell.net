@@ -73,6 +73,10 @@ article.header img {
     background: #CCC;
 }
 
+.single {
+    line-height: 40px;
+}
+
 
 /**** Responsive ****/
 
