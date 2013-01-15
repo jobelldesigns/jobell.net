@@ -1,13 +1,15 @@
 ---
 layout: project
 title: Bookshelf
+client: HarperCollins Publishers
+type: Illustration
 ---
 
 <div class="description-col">
-    <h1>Bookshelf</h1>
-    <p class="client">Harper<i>Collins</i> Publishers</p>
-    <p class="type">Illustration</p>
-    <p class="main-description">An illustrated bookshelf featuring Harper<i>Collins</i> bestsellers for their Facebook and Twitter pages.</p>
+    <h1>{{ page.title }}</h1>
+    <p class="client">{{ page.client }}</p>
+    <p class="type">{{ page.type }}</p>
+    <p class="main-description">An illustrated bookshelf featuring HarperCollins bestsellers for their Facebook and Twitter pages.</p>
     {% include gallery-nav.html %}
 </div>
 <div class="gallery flexslider group">
