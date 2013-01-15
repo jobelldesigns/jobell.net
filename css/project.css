@@ -42,17 +42,23 @@ p {
 }
 
 .gallery {
-    width: 73%; /* 766.8px / 960px  - padding * 2 */
+    width: 79.875%; /* 766.8px / 960px  - padding * 2 */
     background: url('../images/stripe.png');
     float: left;
     min-height: 630px;
     position:relative;
-    padding: 0 3.4375%; /* 33px / 960px */
+}
+
+.gallery ul {
+
+}
+
+.gallery li {
+
 }
 
 .gallery img {
-    max-height: 91.392801252%; /* 33px / 766.8px */
-    max-width: 91.392801252%; /* 33px / 766.8px */
+
     margin: 0 auto;
 
 }
