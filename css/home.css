@@ -53,6 +53,11 @@ article.header img {
     padding-bottom: 7px;
 }
 
+article.event img {
+    background: #f7f7ef;
+    padding-bottom: 40px;
+}
+
 .author-direct .img {
     background: url("../images/home/author_direct_hp.jpg");
     height: 350px;
