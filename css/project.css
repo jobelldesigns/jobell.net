@@ -132,3 +132,35 @@ h1 {
 .page-nav .next {
     background: url("../images/arrows.png") no-repeat scroll -7px 0;
 }
+
+/* Per Project Styling */
+
+ol.typechairs {
+    text-align: left;
+    counter-reset:li;
+    margin: 1em 0 0 0;
+    padding: 0;
+}
+
+ol.typechairs li {
+    list-style:none; /* Hide numbers in preparation for replacements */
+    padding: 0px;
+    position:relative;
+    margin:0 0 1em 1em;
+    padding:4px 8px;
+}
+
+ol.typechairs li:before {
+    content:counter(li)"/"; /* Replace default ol numbers with ones with a slash */
+    counter-increment: li;
+    position:absolute;
+    top:0;
+    left:-1em;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width:1em;
+    margin-right:8px;
+    padding:4px;
+    text-align:left;
+}
