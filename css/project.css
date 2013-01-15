@@ -63,7 +63,7 @@ p {
 
 }
 
-.group:after {
+.group:after, .gallery li:after {
     visibility: hidden;
     display: block;
     content: "";
