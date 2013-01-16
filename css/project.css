@@ -215,6 +215,9 @@ section.book {
 #yoga-series {
     display: block;
 }
+#various-book-covers .slides li img.image8, #various-book-covers .slides li img.image9 {
+    max-height: 82%;
+}
 
 /* One housing group */
 #one-housing-group .slides li img {
