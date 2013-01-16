@@ -40,6 +40,7 @@ p {
     width: 19.5%; /* (187.2 / 960) * 100 */
     float: left;
     margin-right: 0.625%;
+    position: relative;
     text-align: center;
 }
 
@@ -128,10 +129,16 @@ h1, .client, .type {
     text-align: left;
 }
 
+nav.links-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .links {
     color: #b1b1b1;
     display: inline-block;
-    margin: 2em auto 0;
+    vertical-align: bottom;
 }
 
 .links a {
