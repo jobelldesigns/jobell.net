@@ -75,7 +75,7 @@ p {
 }
 
 /* Style non semantic wrapper element */
-.slides li div {
+.slides li > div {
     text-align: center;
     position: relative;
     height: 100%;
