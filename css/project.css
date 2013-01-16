@@ -229,7 +229,7 @@ ol.typechairs li {
     list-style:none; /* Hide numbers in preparation for replacements */
     padding: 0px;
     position:relative;
-    margin:0 0 1em 1em;
+    margin:0 0 0 1em;
     padding:4px 8px;
 }
 
