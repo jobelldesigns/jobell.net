@@ -1,0 +1,10 @@
+#Turn off directory listing
+IndexIgnore *
+
+#Turn on rewrite engine for URL rewriting
+Options +FollowSymLinks All -Indexes
+RewriteEngine on
+
+# Temporarily redirect all non www subdomains of mattheath.com
+RewriteCond %{HTTP_HOST} ^(.*)\.jobell\.net$
+RewriteRule ^(.*)$ http://jobell.net/$1 [R=302,NC,L]
