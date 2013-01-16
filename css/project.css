@@ -250,7 +250,7 @@ ol.typechairs li:before {
 
 
 /* Mobiles */
-@media all and (max-width: 400px) {
+@media all and (max-width: 767px) {
     .description-col {
         float: none;
         width: 100%;
@@ -260,6 +260,7 @@ ol.typechairs li:before {
         clear: both;
         float: none;
         width: 100%;
+        margin: 1em 0;
     }
 
     /* Reset heights to be dynamic */
@@ -289,17 +290,5 @@ ol.typechairs li:before {
 
     .gallery {
         max-height: 400px;
-    }
-}
-
-/* Tablets */
-@media all and (min-width: 400px) and (max-width: 767px) {
-    .description-col {
-        width: 39.530638853%; /* (303.2px / 767px) * 100 */
-        margin-right: 0.7822685789%; /* (6px / 767px) * 100 */
-    }
-
-    .gallery {
-        width: 59.687092568%; /* 457.8px / 767px - padding * 2 */
     }
 }
