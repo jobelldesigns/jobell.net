@@ -184,26 +184,6 @@ h1 {
     background: url("../images/arrows.png") no-repeat scroll -7px 0;
 }
 
-
-/* Mobiles */
-@media all and (max-width: 400px) {
-
-}
-
-/* Tablets */
-@media all and (min-width: 400px) and (max-width: 767px) {
-    .description-col {
-        width: 39.530638853%; /* (303.2px / 767px) * 100 */
-        margin-right: 0.7822685789%; /* (6px / 767px) * 100 */
-    }
-
-    .gallery {
-        width: 59.687092568%; /* 457.8px / 767px - padding * 2 */
-    }
-}
-
-
-
 /*************************
     Per Project Styling
 *************************/
@@ -266,4 +246,56 @@ ol.typechairs li:before {
     margin-right:8px;
     padding:4px;
     text-align:left;
+}
+
+
+/* Mobiles */
+@media all and (max-width: 400px) {
+    .description-col {
+        float: none;
+        width: 100%;
+    }
+
+    .gallery {
+        clear: both;
+        float: none;
+        width: 100%;
+    }
+
+    /* Reset heights to be dynamic */
+    html, body, .main-container, .inside, .content {
+        height: inherit;
+    }
+
+    .inside {
+        margin: 0;
+    }
+
+    .main-container {
+        padding: 0;
+        margin: 10px;
+    }
+
+    nav.links-wrapper {
+        position: relative;
+        bottom: auto;
+        width: 100%;
+        margin: 0.5em 0;
+    }
+
+    h1 {
+        margin-top: 1.2em;
+    }
+}
+
+/* Tablets */
+@media all and (min-width: 400px) and (max-width: 767px) {
+    .description-col {
+        width: 39.530638853%; /* (303.2px / 767px) * 100 */
+        margin-right: 0.7822685789%; /* (6px / 767px) * 100 */
+    }
+
+    .gallery {
+        width: 59.687092568%; /* 457.8px / 767px - padding * 2 */
+    }
 }
