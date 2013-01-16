@@ -221,6 +221,13 @@ section.book {
     max-height: 68%;
 }
 
+/* London Gallery Trumps */
+#london-gallery-trumps .slides li img.image1 {
+    max-height: 60%;
+}
+#london-gallery-trumps .slides li img.image4 {
+    max-height: 85%;
+}
 
 /* Typechairs */
 ol.typechairs {
