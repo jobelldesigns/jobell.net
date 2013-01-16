@@ -78,11 +78,57 @@
 
             #pdf {
                 display: block;
-                margin-top: 40px;
+                margin: 40px 0;
             }
 
             #pdf img {
                 width: 70%;
+            }
+
+            /* Mobiles */
+            @media all and (max-width: 767px) {
+
+                /* Reset heights to be dynamic */
+                html, body, .main-container, .inside, .content {
+                    height: inherit;
+                    overflow: visible;
+                }
+
+                .inside {
+                    margin: 0;
+                }
+
+                .main-container {
+                    padding: 0;
+                    margin: 10px;
+                }
+
+                nav.links-wrapper {
+                    position: relative;
+                    bottom: auto;
+                    width: 100%;
+                    margin: 0.5em 0;
+                }
+
+                h1 {
+                    margin-top: 1.2em;
+                }
+
+                .spacer {
+                    display: none;
+                }
+
+                .col {
+                    width: 100%;
+                    float: none;
+                    min-height: 0;
+                }
+
+                .experience h2, .contact h2 {
+                    border-top: 1px solid #333;
+                    margin-top: 2em;
+                }
+
             }
 
 
@@ -93,7 +139,7 @@
         <div class="main-container">
             <div class="inside">
                 <div class="content group">
-                    <div class="col"></div>
+                    <div class="col spacer"></div>
                     <div class="col about">
                         <h2>About</h2>
                         <p>Having graduated with a first from Kingston University in 2009, I have gained experience in a range of great design companies. Working on branding projects, book design, print and illustration for clients including Royal Mail, Arts Council England and Limoncello Gallery.</p>
@@ -139,7 +185,7 @@
                             <img src="../images/pdf_download.png" />
                         </a>
                     </div>
-                    <div class="col last"></div>
+                    <div class="col spacer last"></div>
                 </div>
             </div>
         </div>
