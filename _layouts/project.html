@@ -35,11 +35,46 @@
                 $('#total-pages').text($('.gallery img').length);
                 $('.gallery img:first-child').show();
 
+                // Allow multiple text sections which are switched out part way through a gallery
+                var sections = $(".description-col section");
+                var numSections = sections.length;
+
                 $('.gallery').flexslider({
                     namespace: '',
                     controlNav: false,
                     directionNav: false,
                     pauseOnHover: true,
+                    before: function() {
+
+                        // Don't do anything if no text sections
+                        if (numSections === 0) {
+                            return;
+                        }
+
+                        var flexslider = $('.gallery').data('flexslider');
+                        var nextSlide = flexslider.currentSlide + 1; // 1 as a base
+
+                        console.log("next slide" + nextSlide);
+
+                        sections.each(function() {
+                            var triggerSlide = $(this).data('slide');
+
+                            if (nextSlide === triggerSlide) {
+
+                                console.log("switching text section to " + nextSlide);
+
+                                // Hide all sections
+                                $('section.book').hide();
+
+                                // Show correct one
+                                $(this).show();
+
+                                // Jump out of loop
+                                return false;
+                            }
+                        })
+
+                    },
                     after: function(){
                         var flexslider = $('.gallery').data('flexslider');
                         $('#current-page').text(flexslider.currentSlide + 1);
