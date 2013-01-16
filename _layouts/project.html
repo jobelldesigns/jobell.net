@@ -44,40 +44,34 @@
                     controlNav: false,
                     directionNav: false,
                     pauseOnHover: true,
-                    before: function() {
+                    after: function() {
 
-                        // Don't do anything if no text sections
+                        // Update current slide number
+                        var flexslider = $('.gallery').data('flexslider');
+                        $('#current-page').text(flexslider.currentSlide + 1);
+
+
+                        // Don't do anything further if no text sections
                         if (numSections === 0) {
                             return;
                         }
 
+                        // Get next slide, and the section required for it
                         var flexslider = $('.gallery').data('flexslider');
-                        var nextSlide = flexslider.currentSlide + 1; // 1 as a base
+                        var nextSlide = flexslider.currentSlide;
+                        var section = $(flexslider.slides[nextSlide]).data('section');
 
-                        console.log("next slide" + nextSlide);
+                        // Check if already displayed?
+                        if ($('#'+section).is(':visible')) {
+                            // Nothing to do
+                            return;
+                        }
 
-                        sections.each(function() {
-                            var triggerSlide = $(this).data('slide');
+                        // Hide visible section
+                        $('section:visible').hide();
 
-                            if (nextSlide === triggerSlide) {
-
-                                console.log("switching text section to " + nextSlide);
-
-                                // Hide all sections
-                                $('section.book').hide();
-
-                                // Show correct one
-                                $(this).show();
-
-                                // Jump out of loop
-                                return false;
-                            }
-                        })
-
-                    },
-                    after: function(){
-                        var flexslider = $('.gallery').data('flexslider');
-                        $('#current-page').text(flexslider.currentSlide + 1);
+                        // Show correct one
+                        $('#'+section).show();
                     }
                 });
 
