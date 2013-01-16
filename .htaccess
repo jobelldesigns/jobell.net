@@ -8,3 +8,10 @@ RewriteEngine on
 # Temporarily redirect all non www subdomains of mattheath.com
 RewriteCond %{HTTP_HOST} ^(.*)\.jobell\.net$
 RewriteRule ^(.*)$ http://jobell.net/$1 [R=302,NC,L]
+
+# Redirect old pages
+redirect 301 /cv.html /about/
+redirect 301 /contact.html /about/
+
+redirect 302 /JoBell.pdf /about/jo-bell.pdf
+redirect 302 /about/jo_bell.pdf /about/jo-bell.pdf
