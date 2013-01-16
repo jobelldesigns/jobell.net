@@ -197,8 +197,19 @@ h1 {
 
 
 
-/* Per Project Styling */
+/*************************
+    Per Project Styling
+*************************/
 
+/* Various book covers */
+section.book {
+    display: none;
+}
+#yoga-series {
+    display: block;
+}
+
+/* Typechairs */
 ol.typechairs {
     text-align: left;
     counter-reset:li;
