@@ -58,22 +58,6 @@ article.event img {
     padding-bottom: 40px;
 }
 
-.author-direct .img {
-    background: url("../images/home/author_direct_hp.jpg");
-    height: 350px;
-    width: 100%;
-    background-size: 250%;
-    background-position: 20% 15%;
-}
-
-.collins-shorts .img {
-    background: url("../images/home/collins_shorts_hp.jpg");
-    height: 390px;
-    width: 100%;
-    background-size: 120%;
-    background-position: 100% 0%;
-}
-
 .projects article a:hover p {
     background: #CCC;
 }
