@@ -1,3 +1,9 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica, arial, sans;
+}
+
 /* Basic style for tablets and small desktops */
 section.projects {
     -moz-column-count: 3;
