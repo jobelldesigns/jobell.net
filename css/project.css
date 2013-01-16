@@ -229,6 +229,11 @@ section.book {
     max-height: 85%;
 }
 
+/* Bookshelf */
+#bookshelf .slides li img.image1 {
+    max-height: 45%;
+}
+
 /* Typechairs */
 ol.typechairs {
     text-align: left;
