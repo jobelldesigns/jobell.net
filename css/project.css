@@ -142,8 +142,12 @@ h1, .client, .type {
     display: inline-block
 }
 
-.links .home {
-    font-weight: bold;
+a.home {
+    color: #c8c8c8;
+}
+
+a.home:hover {
+    color: #b1b1b1;
 }
 
 h1 {
