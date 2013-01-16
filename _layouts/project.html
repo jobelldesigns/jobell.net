@@ -49,28 +49,25 @@
                         var flexslider = $('.gallery').data('flexslider');
                         $('#current-page').text(flexslider.currentSlide + 1);
 
+                        // Update image description if multiple sections in gallery
+                        if (numSections > 0) {
+                            // Get next slide, and the section required for it
+                            var flexslider = $('.gallery').data('flexslider');
+                            var nextSlide = flexslider.currentSlide;
+                            var section = $(flexslider.slides[nextSlide]).data('section');
 
-                        // Don't do anything further if no text sections
-                        if (numSections === 0) {
-                            return;
+                            // Check if already displayed?
+                            if ($('#'+section).is(':visible')) {
+                                // Nothing to do
+                                return;
+                            }
+
+                            // Hide visible section
+                            $('section:visible').hide();
+
+                            // Show correct one
+                            $('#'+section).show();
                         }
-
-                        // Get next slide, and the section required for it
-                        var flexslider = $('.gallery').data('flexslider');
-                        var nextSlide = flexslider.currentSlide;
-                        var section = $(flexslider.slides[nextSlide]).data('section');
-
-                        // Check if already displayed?
-                        if ($('#'+section).is(':visible')) {
-                            // Nothing to do
-                            return;
-                        }
-
-                        // Hide visible section
-                        $('section:visible').hide();
-
-                        // Show correct one
-                        $('#'+section).show();
                     }
                 });
 
