@@ -216,6 +216,12 @@ section.book {
     display: block;
 }
 
+/* One housing group */
+#one-housing-group .slides li img {
+    max-height: 68%;
+}
+
+
 /* Typechairs */
 ol.typechairs {
     text-align: left;
