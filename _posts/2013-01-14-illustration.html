@@ -5,11 +5,14 @@ type: Various
 ---
 
 <div class="description-col">
-    <h1>{{ page.title }}</h1>
-    <p class="type">{{ page.type }}</p>
+    <div class="more-wrapping">
+        <div class="description-content">
+            <h1>{{ page.title }}</h1>
+            <p class="type">{{ page.type }}</p>
 
-    <p class="main-description">A selection of illustrations both commissioned and noncommissioned.</p>
-
+            <p class="main-description">A selection of illustrations both commissioned and noncommissioned.</p>
+        </div>
+    </div>
     {% include gallery-nav.html %}
 </div>
 <div class="gallery group">
