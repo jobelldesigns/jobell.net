@@ -78,6 +78,7 @@ h2 {
 
 #pdf img {
     width: 70%;
+    max-width: 200px;
 }
 
 #home {
