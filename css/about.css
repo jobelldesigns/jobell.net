@@ -80,6 +80,17 @@ h2 {
     width: 70%;
 }
 
+#home {
+    display: inline-block;
+    color: #c8c8c8;
+    border-bottom: 1px solid #b1b1b1;
+    padding-bottom: 5px;
+}
+a#home:hover {
+    color: #c8c8c8;
+}
+
+
 /* Mobiles */
 @media all and (max-width: 767px) {
 
