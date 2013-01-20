@@ -72,6 +72,21 @@ article.event img {
     line-height: 40px;
 }
 
+footer {
+    width: 90%;
+    max-width: 1200px;
+    margin: -50px auto 0;
+    height: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+a, a:hover  {
+    color: #333;
+}
+
 
 /**** Responsive ****/
 
