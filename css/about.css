@@ -90,8 +90,25 @@ a#home:hover {
     color: #c8c8c8;
 }
 
+/* 3 column grid with no outside margins */
+@media all and (min-width: 768px) and (max-width: 960px) {
 
-/* Mobiles */
+    .spacer {
+        display: none;
+    }
+
+    .col {
+        width: 32.916666667%; /* (316 / 960) * 100 */
+    }
+
+    .contact {
+        margin-right: 0;
+    }
+
+}
+
+
+/* Mobiles - 1 column grid */
 @media all and (max-width: 767px) {
 
     /* Reset heights to be dynamic */
