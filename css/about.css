@@ -106,9 +106,7 @@ a#home:hover {
     .contact {
         margin-right: 0;
     }
-
 }
-
 
 /* Mobiles - 1 column grid */
 @media all and (max-width: 767px) {
