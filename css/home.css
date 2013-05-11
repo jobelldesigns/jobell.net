@@ -77,6 +77,7 @@ footer {
     max-width: 1200px;
     margin: -50px auto 0;
     height: 50px;
+    line-height: 28px;
 }
 
 footer p {
@@ -87,6 +88,15 @@ a, a:hover  {
     color: #333;
 }
 
+
+
+.designed {
+    float: left;
+}
+
+.developed {
+    float: right;
+}
 
 /**** Responsive ****/
 
@@ -115,6 +125,9 @@ a, a:hover  {
         -webkit-column-count: 1;
         column-count: 1;
     }
+
+
+
 }
 
 @media all and (min-width: 400px) and (max-width: 767px) {
