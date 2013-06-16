@@ -213,6 +213,11 @@ section.book {
     display: block;
 }
 
+/* Collins Shorts */
+#collins-shorts img.collins-shorts-logo {
+    max-width: 68%;
+}
+
 /* One housing group */
 #one-housing-group .slides li img {
     max-height: 68%;
