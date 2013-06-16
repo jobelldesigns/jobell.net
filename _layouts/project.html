@@ -71,15 +71,22 @@
                     }
                 });
 
-                $('.page-nav .next').on('click', function(e) {
+                $('.page-nav .next, .slide-control.next').on('click', function(e) {
                     e.preventDefault();
                     $('.gallery').flexslider("next");
                 })
 
-                $('.page-nav .prev').on('click', function(e) {
+                $('.page-nav .prev, .slide-control.prev').on('click', function(e) {
                     e.preventDefault();
                     $('.gallery').flexslider("prev");
                 })
+
+                $(".gallery").hover(function(){
+                    $(".slide-control").fadeIn("slow");
+                },
+                function(){
+                    $(".slide-control").fadeOut();
+                });
 
             });
 

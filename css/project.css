@@ -201,6 +201,29 @@ h1 {
     background: url("../images/arrows.png") no-repeat scroll -7px 0;
 }
 
+.slide-control {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    text-indent: -9999px;
+    text-align: center;
+    background: url("../images/prev-g.png")  no-repeat scroll 0 0;
+}
+
+.slide-control.next {
+    left: auto;
+    right: 20px;
+    background: url("../images/next-g.png") no-repeat scroll 0 0;
+}
+
+/* Hide until used */
+.slide-control {
+    display:none;
+}
+
 /*************************
     Per Project Styling
 *************************/
